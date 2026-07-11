@@ -1,0 +1,32 @@
+/* ── MOBILE ── */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-image-col { height: 380px; order: -1; }
+    .hero-content { padding: 40px 24px 56px; }
+    .sobre { grid-template-columns: 1fr; }
+    .comp5-grid { grid-template-columns: repeat(2, 1fr); }
+    .comparativo-wrap { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .depo-card { flex: 0 0 calc(100% - 0px); }
+    .nav-links { display: none; flex-direction: column; gap: 0; position: absolute; top: 72px; left: 0; right: 0; background: white; border-bottom: 1px solid var(--beige-mid); padding: 8px 0; }
+    .nav-links.open { display: flex; }
+    .nav-links li { padding: 12px 24px; border-bottom: 1px solid var(--off-white); }
+    .hamburger { display: flex; }
+    .sobre-badge { right: 12px; }
+    .galeria-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+    .galeria-item--large { grid-column: 1 / -1; grid-row: auto; height: 320px; }
+    .galeria-item--square { grid-column: 1; grid-row: auto; height: 220px; }
+    .galeria-item--tall { grid-column: 2; grid-row: auto; height: 220px; }
+    .galeria-item--wide { grid-column: 1 / -1; grid-row: auto; height: 240px; }
+  }
+
+  @media (max-width: 600px) {
+    .comp5-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .servicos-grid { grid-template-columns: 1fr; }
+    .hero-trust { gap: 12px; }
+    .hero-trust-item strong { font-size: 1.3rem; }
+  }
