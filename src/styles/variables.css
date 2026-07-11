@@ -17,4 +17,12 @@
     --radius: 16px;
     --radius-sm: 10px;
     --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Layout — desktop */
+    --container-max: 1140px;
+    --container-wide: 1280px;
+    --container-xl: 1400px;
+    --gutter: clamp(24px, 5vw, 48px);
+    --mobile-gutter: max(20px, 5vw);
+    --section-y: clamp(64px, 8vw, 100px);
   }

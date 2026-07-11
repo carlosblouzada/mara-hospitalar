@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 function getVisibleCards() {
-  if (window.innerWidth < 700) return 1;
-  if (window.innerWidth < 1000) return 2;
+  if (window.innerWidth <= 900) return 1;
+  if (window.innerWidth <= 1279) return 2;
   return 3;
 }
 
